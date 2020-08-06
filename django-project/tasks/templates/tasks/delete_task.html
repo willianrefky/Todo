@@ -1,0 +1,8 @@
+<p>kamu yakin akan menghapus "{{ item }}" ?</p>
+
+<a href="/">batal</a>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" name="konfirmasi">
+</form>
